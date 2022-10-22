@@ -1,0 +1,332 @@
+@font-face {
+  font-family: pressStart2P;
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+@font-face {
+  font-family: kellySlab;
+  src: url("fonts/KellySlab-Regular.ttf");
+}
+@font-face {
+  font-family: fasterOne;
+  src: url("fonts/FasterOne-Regular.ttf");
+}
+
+
+
+#glavno{
+    width: 1000px;
+    margin-left: 30px;
+    float:left;
+    height: 770px;
+}
+body{
+    background: url("img/background2.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    line-height: 1.6;
+    cursor: url("img/cursor1.png"),auto;
+}
+
+#main{
+    position: relative;
+    top: -30px;
+}
+
+#naslov{
+    width: 1000px;
+    height: 100px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -40px;
+}
+
+.title{
+    float: left;
+    font-family: fasterOne, arial;
+    color: rgba(251,63,63,1);
+    text-shadow: 3px 7px rgba(174,70,252,1);
+    font-size: 70px;
+    margin-left: 20px;
+}
+
+#meni{
+    background: linear-gradient(180deg, rgba(195,34,123,1) 3%, rgba(253,187,45,0) 100%);
+    border: rgba(195,34,123,1) solid 3px;
+    border-bottom: none;
+    height: 50px;
+    
+}
+
+#meni ul {
+    height: 50px;
+    float:right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#meni li {
+    float: left;
+}
+
+#meni li a {
+    display: block;
+    color: white;
+    font-family: pressStart2P, arial;
+    font-size: 10px;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+#meni li a:hover {
+    color: #961957;
+    text-decoration: underline;
+}
+
+#meni:after{
+    clear:both;
+}
+
+.prozor{
+    width: 290px;
+    margin: 16px;
+    border: 3px solid white;
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+}
+
+.bar{
+    background: linear-gradient(90deg, rgba(233,61,181,1) 35%, rgba(21,235,255,1) 100%);
+    height: 30px;
+    border-bottom: 3px solid white;
+}
+
+.bar h3{
+    float: left;
+    color: white;
+    font-family: pressStart2P, arial;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.ikonice{
+    float: right;
+    margin: 3px 3px 0px 0px;
+}
+
+.ikonice img{
+    height: 25px;
+}
+
+#main .prozor .content{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    top: 10px;
+    box-sizing: border-box;
+    font-family: kellySlab,arial;
+    text-align: justify;
+}
+
+#main .prozor h2{
+    color: rgba(233,61,181,1);
+    text-shadow: 1px 3px rgba(21,235,255,1);
+    text-transform: uppercase;
+
+}
+
+#main .content img{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    height: 70px;
+}
+#forma{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin-left: 30px;
+}
+
+#forma .prozor{
+    width: 400px;
+    float:left;
+}
+
+#forma .content{
+    color: rgba(233,61,181,1);
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: pressStart2P, arial;
+    font-size: 10px;
+    text-shadow: 1px 2px rgba(21,235,255,1);
+}
+
+#ulogujse img{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+input[type=button]{
+    background-color: #c0c0c0;
+    border: solid 3px;
+    padding: 5px;
+    margin: 10px;
+    border-color: white black black white;
+    font-family: pressStart2P, arial;
+    font-size: 10px;
+    float:right;
+    
+}
+
+input[type=button]:active{
+    background-color: #a0a0a0;
+    border-color: black white white black;
+    
+}
+
+#ulogovan{
+    text-shadow: none;
+    font-weight: bold;
+}
+
+#ulogovan span{
+    color: rgba(21,235,255,1);
+}
+
+#ulogovan h1{
+    text-shadow: 2px 3px rgba(21,235,255,1);
+}
+
+#ulogovan img{
+    float: right;
+    height: 100px;
+    width: 100px;
+    border: solid 3px rgba(233,61,181,1);
+    border-radius: 100%;
+}
+
+input[type=text],input[type=url],input[type=date],input[type=password],input[type=email],select{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-left: solid 1px rgba(233,61,181,1);
+    border-bottom: solid 1px rgba(233,61,181,1);
+    color: rgba(233,61,181,1);
+}
+
+input[type=text]:focus,input[type=url]:focus,input[type=date]:focus,input[type=password]:focus,input[type=email]:focus,select:focus{
+    background-color: rgba(233,61,181,0.3);
+}
+
+#prikaziSve .prozor{
+    width: 100%;
+    height: 550px;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+    top: -30px;
+}
+
+ #prikaziIgricu .prozor{
+    width: 100%;
+    min-height: 550px;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+    top: -30px;
+ }
+ 
+#tabelaSearch{
+    font-family: pressStart2P;
+    font-size: 9px;
+    position: relative;
+    left: -120px;
+    top: 20px;
+    color: rgba(233,61,181,1);
+    text-align: left;
+}
+
+#tabelaSearch td,#tabelaSearch th{
+    padding: 0px 5px;
+}
+
+#tabela{
+    color: rgba(233,61,181,1);
+    width: 930px;
+    text-align: left;
+}
+
+#tabela tr:hover, #tabela th{
+    color: rgba(21,235,255,1);
+}
+
+#tabelaWrapper{
+    position: relative;
+    left: 30px;
+    top: 70px;
+    width: 950px;
+    height: 380px;
+    overflow: scroll;
+}
+
+#prikaziIgricu .prozor .content{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    top: 10px;
+    box-sizing: border-box;
+    font-family: kellySlab,arial;
+}
+
+#prikaziSve .prozor .content{
+    font-family: kellySlab,arial;
+}
+
+#prikaziIgricu .prozor .content h3{
+    color: rgba(233,61,181,1);
+    text-shadow: 1px 3px rgba(21,235,255,1);
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+#prikaziIgricu .content img{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    height: 180px;
+}
+
+#prikaziIgricu .content p{
+    text-align: justify;
+}
+
+#novosti{
+    position: relative;
+    left: -15px;
+    width: 650px
+}
+
+#preporukaMeseca{
+    position: relative;
+    top: -288px;
+    left: 656px;
+    width: 320px;
+}
+
+#setupNovosti{
+    position: relative;
+    top: -15px;
+    left: -374px;
+}
+
+#programi{
+    position: relative;
+    top: -610px;
+    left: 294px;
+    width: 340px;
+}
